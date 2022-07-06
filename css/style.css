@@ -5,14 +5,51 @@ Font Color (black): #000000;
 Button Color (grey): # #6A6969;
 Button Font color (white): #FFFFFF;
  */
+ /*Layout Styling*/
+ .container {padding: 0 15px; }
+ header {
+   background-color: #EFEFEF;
+   text-align: center;
+   padding: 10px 0;
+   margin: 10px;
+   border-bottom: 3px solid #4a4a4a;
+   box-shadow: 6px 6px 5px 0px rgba(50, 50, 50, 0.75);
+ }
+ header {position: fixed; display: inline-block;
+ width: 100%;}
+ /*Nav elements*/
+ nav > ul {
+   list-style-type: none;
+   display: inline-block; width: 100%;
+   padding: 0;
+ }
+ nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+/* Body and Hero*/
+#hero {background-color: #EFEFEF;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+main {
+  padding-top: 133px;
+}
  body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
 font-weight: 300; /* Sets the font weight to 300 */
 line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 color: #000000;
+margin: 10px;
 }
-
+.center {text-align: center;}
 h1, h2, h3{ line-height: 1.4;}
 h1 {  font-size: 2.75em;  font-weight: 700; }
 h2 {  font-size: 2.25em;  font-weight: 700; }
@@ -28,6 +65,7 @@ a:focus {
   color: #cc6540;
   text-decoration: underline;}
 a:active { /* selected link */  color: #7B12CB;}
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color:  #6A6969;
@@ -37,14 +75,18 @@ a:active { /* selected link */  color: #7B12CB;}
   border-radius: 3px;
   border-bottom: 2px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;}
+
   .button:hover {
+    color: #ffffff
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;}
+
   .button.contact {
   background-color: transparent;
-  color: #000000;
+  color: #6A6969;
   text-transform: uppercase;
   border: 2px solid #6A6969;}
+
   .button.contact:hover {
     background-color: #6A6969;
     color: #ffffff;}
