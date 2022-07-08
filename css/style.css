@@ -32,7 +32,13 @@ nav > ul > li > a {
   color: #4a4a4a;
 }
 /* Body and Hero*/
-#hero {background-color: #EFEFEF;
+#hero {background-color: #FFFFFF;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#contact {background-color: #EFEFEF;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
