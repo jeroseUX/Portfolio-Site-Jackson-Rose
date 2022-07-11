@@ -9,11 +9,11 @@ Button Font color (white): #FFFFFF;
  .container {padding: 0 15px; margin: 10px; }
  header {
    background-color: #EFEFEF;
-   text-align: center;
    padding: 10px 0;
    border-bottom: 3px solid #4a4a4a;
    box-shadow: 6px 6px 5px 0px rgba(50, 50, 50, 0.75);
  }
+ header {text-align: unset;}
  header {position: fixed; display: inline-block;
  width: 100%;}
  /*Nav elements*/
@@ -34,8 +34,12 @@ nav > ul > li > a {
 /* Body and Hero*/
 #hero {background-color: #FFFFFF;
   padding: 20px 0;
-  display: inline-block;
+  display: block;
   width: 100%;
+}
+
+#hero span {
+  display: block;
 }
 
 #contact {background-color: #EFEFEF;
@@ -94,3 +98,25 @@ a:active { /* selected link */  color: #7B12CB;}
   .button.contact:hover {
     background-color: #6A6969;
     color: #ffffff;}
+
+    @media only screen and (min-width: 640px) {header{text-align: unset; padding: 20px 0 13px}
+
+    .col-md-6 {
+      width: 50%;
+    }
+    [class*="col-"] { padding: 10px;
+  float: left;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    nav{ width: auto;
+      float: right;
+      margin-top: 4px;}}
+    @media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1440px) {
+}
