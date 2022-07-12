@@ -74,6 +74,10 @@ a:focus {
   text-decoration: underline;}
 a:active { /* selected link */  color: #7B12CB;}
 
+.col-md-6 {
+  width: 50%;
+}
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color:  #6A6969;
