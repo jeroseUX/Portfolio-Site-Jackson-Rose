@@ -1,139 +1,291 @@
-/*
-Colors being used:
-Background Color (white): #FFFFFF;
-Font Color (black): #000000;
-Button Color (grey): # #6A6969;
-Button Font color (white): #FFFFFF;
- */
- /*Layout Styling*/
- .container {padding: 0 15px; margin: 10px; }
- header {
-   background-color: #EFEFEF;
-   padding: 10px 0;
-   border-bottom: 3px solid #4a4a4a;
-   box-shadow: 6px 6px 5px 0px rgba(50, 50, 50, 0.75);
- }
- header {text-align: unset;}
- header {position: fixed; display: inline-block;
- width: 100%;}
- /*Nav elements*/
- nav > ul {
-   list-style-type: none;
-   display: inline-block; width: 100%;
-   padding: 0;
- }
- nav > ul > li {
-  display: inline-block;
-}
-nav > ul > li > a {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #4a4a4a;
-}
-/* Body and Hero*/
-#hero {background-color: #FFFFFF;
-  padding: 20px 0;
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-#hero span {display: block;}
+New CSS Code:
+/*-------------------------------------------Start Section---------------------------------------------*/
 
-#contact {background-color: #EFEFEF;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
+/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
+* {
+ box-sizing: border-box;
 }
-main {
-  padding-top: 133px;
-}
- body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-font-weight: 300; /* Sets the font weight to 300 */
-line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-color: #000000;
-}
-.center {text-align: center;}
-h1, h2, h3{ line-height: 1.4;}
-h1 {  font-size: 2.75em;  font-weight: 700; }
-h2 {  font-size: 2.25em;  font-weight: 700; }
-h3 {  font-size: 1.75em;  font-weight: 400; }
 
-img {  width: 100%;}
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*default body settings*/
 
-a {color: #3D42C2;  text-decoration: none; /* No underlining */}
-a:visited { /* visited link */  color: #3D42C2;}
-a:hover {color: #cc6540;  text-decoration: underline; /* Underlining when hovering over a link */}
+body {
+ font-family: 'Roboto', sans-serif;
+ font-size: 16px; /* Sets the font size to 16px */
+ font-weight: 300; /* Sets the font weight to 300 */
+ line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+ color: #000000;
+}
+
+h1, h2, h3, h4 {
+ line-height: 1.4;
+}
+
+h1 {
+ font-size: 2.75em;
+ font-weight: 700;
+}
+
+
+
+h2 {
+ font-size: 2.25em;
+ font-weight: 700;
+}
+
+h3 {
+ font-size: 1.75em;
+ font-weight: 400;
+ margin-top: -8px;
+}
+
+#about-page h3 { margin-top: 0;}
+
+h4 {
+ font-size: 1.35em;
+ font-weight: 400;
+}
+
+
+/*setting images to full-width*/
+img {
+ width: 100%;
+}
+
+/*change the default link color to your primary color (copied from your comments at the top of the document)*/
+a {
+ color: #ff7f50;
+ text-decoration: none; /* No underlining */
+}
+a:hover {
+ color: #cc6540;
+ text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active { /* selected link */
+ color: #7B12CB;
+}
+
+/*Pseudo classes for Accessibility for Across the Web*/
 a:hover,
 a:focus {
-  color: #cc6540;
-  text-decoration: underline;}
-a:active { /* selected link */  color: #7B12CB;}
+ color: #cc6540;
+ text-decoration: underline;
+}
 
 
+/*CSS code for the button class*/
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color:  #6A6969;
-  color: #E65555 ; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
-  transition: 0.2s opacity;}
-
-  .button:hover {
-    color: #ffffff
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;}
-
-  .button.contact {
-  background-color: transparent;
-  color: #6A6969;
-  text-transform: uppercase;
-  border: 2px solid #6A6969;}
-
-  .button.contact:hover {
-    background-color: #6A6969;
-    color: #ffffff;}
-
-/* End of Exercise*/
-/*Medium Device*/
-  @media only screen and (min-width: 640px)
-
- {header{text-align: unset; padding: 20px 0 13px}
-
-    .col-md-6 {
-      width: 50%;
-    }
-    [class*="col-"] { padding: 10px;
-  float: left;
+ display: inline-block;
+ background-color: #6A6969;
+ color: #E65555;
+ font-weight: 400;
+ padding: 10px;
+ border-radius: 3px;
+ border-bottom: 2px solid #994c30;
+ transition: 0.2s opacity;
 }
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+
+.button:hover {
+ opacity: 0.8;
+ color: #ffffff;
+ text-decoration: none;
 }
-    nav{ width: auto;
-      float: right;
-      margin-top: 4px;}}
-/*Large Device*/
-    @media only screen and (min-width: 1024px) {
+
+
+/*button rules for the mailto button*/
+.button.contact {
+ background-color: transparent;
+ color: #6A6969;
+ text-transform: uppercase;
+ border: 2px solid #6A6969;
 }
+
+/*button class hover state*/
+
+.button.contact:hover {
+ opacity: 0.8;
+ background-color: #6A6969;
+ color: #ffffff;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*stye the page sections*/
+
+/*style the <header> element*/
+header {
+ background-color: #EFEFEF;
+ padding: 10px 0;
+ border-bottom: 3px solid #4a4a4a;
+ box-shadow: 6px 6px 5px 0px rgba(50, 50, 50, 0.75);
+ text-align: unset;
+ position: fixed;
+ display: inline-block;
+ width: 100%;
+}
+
+/*style the logo*/
+header .logo {
+ max-width: 250px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+/*Navigation Styling*/
+nav {
+ display: inline-block;
+}
+
+nav > ul {
+ list-style-type: none;
+ padding: 0;
+}
+
+nav > ul > li {
+ display: inline-block;
+}
+
+nav > ul > li > a {
+ padding: 0 15px;
+ text-transform: uppercase;
+ font-weight: 700;
+ color: #4a4a4a;
+}
+
+main {
+ padding-top: 133px;
+}
+
+#hero {
+ background-color: #ffffff;
+ padding: 20px 0;
+ display: inline-block;
+ width: 100%;
+ text-align: center;
+}
+
+#hero span {
+ display: block;
+}
+
+#contact {
+   background-color: #efefef;
+   padding: 20px 0;
+   display: inline-block;
+   width: 100%;
+}
+
+
+/*Style the social icons*/
+.social {
+ list-style-type: none;
+ padding: 0;
+ margin-left: -10px;
+}
+
+.social li {
+ display: inline-block;
+ margin-top: 10px;
+ margin-left: 10px;
+}
+
+.social svg {
+ height: 32px;
+ width: 32px;
+}
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/* Layout styling */
+
 .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+ padding: 0 15px;
 }
-.col-lg-7{width:58.33%}
-[class*="col-"] { padding: 10px;
-float: left;
+
+.row {
+ margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-/*X-Large Device*/
-@media only screen and (min-width: 1440px) {
+
+#work .row { padding-bottom: 20px; }
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*SVG anamation*/
+
+/*INSERT SVG CSS HERE*/
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*Media Queries*/
+
+/*clear page flow*/
+.row::after {
+ content: "";
+ clear: both;
+ display: table;
 }
-.col-lg-5{width:41.66%}
-[class*="col-"] { padding: 10px;
-float: left;
+
+/*float all columns left*/
+[class*="col-"] {
+ padding: 10px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+ body {
+   font-size: 18px;
+ }
+
+ header {
+   text-align: unset;
+   padding: 20px 0 13px;
+ }
+
+ nav {
+   width: auto;
+   float: right;
+ }
+
+ .col-md-6 {
+   width: 50%;
+   float: left;
+   padding-bottom: 40px;
+ }
+
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+ .container {
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ .col-lg-7 {
+   width: 60%;
+ }
+
+ .col-lg-5 {
+   width: 40%;
+ }
+
+ .col-lg-7 {
+   width: 60%;
+   float: left;
+   padding-bottom: 40px;
+ }
+ .col-lg-8 {
+   width: 40%;
+   float: right;
+ }
+
+  #about-page .col-md-6 {
+    width: 100%;
+ }
 }
