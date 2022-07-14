@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jacksoneroseux</title>
-  <link rel="stylesheet" type="text/css"
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jacksoneroseux</title>
+    <link rel="stylesheet" type="text/css"
  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Index page</title>
   </head>
-
-
-  <body>
-    <!--This is the header section-->
-
-  <header>
-      <div class= "container">
+  <body id="index-page">
+    <!-- For the header -->
+	<header>
+		<div class= "container">
         <a href="index.html">Jackson Rose</a>
         <nav>
           <ul>
@@ -26,58 +23,61 @@
           </ul>
         </nav>
       </div>
-    </header>
-    <!--This is the main and hero section-->
+	</header>
 
+    <main>
+        <!-- For the hero section -->
+        <div id="hero">
+            <div class="container">
+                <h1>Hello, I'm Jackson! I am a Junior UX Desginer from Phoenix, Arizona.</h1>
+                <h2>
+                    As a Junior UX Designer, I am here to solve problems for users by providing a creative user experience which makes accomplishing tasks simple and straight forward.
+                </h2>
+            </div>
+        </div>
 
-<main>
-    <div id="hero">
-    <div class= "container">
-    <h1> Hello, I'm Jackson! I am a Junior UX Desginer from
-        Phoenix, Arizona.</h1>
-    <h2> As a Junior UX Designer, I am here to solve problems for users by providing a
-        creative user experience which makes accomplishing tasks simple and straight forward.</h2>
+        <!-- For your work/projects -->
+        <div id="work">
+            <div class="container">
+                <div>
+                    <h3>Here are my projects:</h3>
+                </div>
+                <!--Project One-->
+                <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;"><!-- open row that holds (2) columns for project -->
+                  <div class="column col-md-6 col-lg-7"><!-- open first column (used for image) -->
+                    <picture>
+                      <source srcset="img/HomeImages/ExpertThumbnail.png" media="(max-width:767px)">
+                      <img src="img/HomeImages/ExpertThumbnail.png" alt="Expert Homepage">
+                    </picture>
+                  </div><!-- end first column -->
+                  <div class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
+                    <h3>Expert</h3><!-- heading for the project -->
+                    <p><!-- open paragraph -->
+                      Expert is an app designed ot help users connect to professionals easily. Expert has professionals in the most niche topics to the most commmon. Expert benefits both users and professsionals who use the app.
+                    </p><!-- end paragraph -->
+                    <a href="expertprojectpage.html" class="button">Read more</a><!-- button or link label -->
+                  </div><!-- end second column -->
+                </div><!-- end row that holds (2) columns for project -->
 
-
-  <!--Project section-->
-
-<div><h3>Here are my projects:</h3></div>
-    <!--Expert Work-->
- <div class="column col-md-6 col-lg-5">
-   <h3>Expert</h3></div>
-          <div class="row">
-              <div class="col-md-6 col-lg-7 col-xl-7"><picture>
-                <source srcset="img/HomeImages/ExpertThumbnail.png" media="(max-width:767px)">
-                              <img src="img/HomeImages/ExpertThumbnail.png" alt="Expert Homepage">
-                                                                                </picture></div></div>
-                  <p>Expert is an app designed ot help users connect to professionals easily.
-       Expert has professionals in the most niche topics to the most commmon. Expert benefits both users
-    and professsionals who use the app.</p>
-<a href="expertprojectpage.html" class="button">Read more</a>
-
-
-  <!--Olympus Health work-->
-  <div class="column col-md-6 col-lg-5">
-              <h3>OlympusHealth</h3></div>
-                            <div class="row">
-                              <div class="col-md-6 col-lg-5 col-xl-5"><picture>
-                                <source srcset="img/HomeImages/OlympusHealthThumbnail.png" media="(max-width:767px)">
-                                      <img src="img/HomeImages/OlympusHealthThumbnail.png" alt="OlympusHealth Homepage">
-                                                                                  </picture></div></div>
-    <p>Olympus Health is a medical examinations company that hires physicians within the U.S.A.</p>
-    <a href="#" class="button">Read more</a>
-</div></div></main>
-
-
-<!--Sample Project-->
-<div class="column col-md-6 col-lg-5">
-  <h3>CSS Animation</h3></div>
-         <div class="row">
-             <div class="col-md-6 col-lg-7 col-xl-7">
-
-             </div></div>
-                 <p>This is a sample project</p>
-<a href="Sample Project.html" class="button">Read more</a>
+                <!--Project Two-->
+                <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;"><!-- open row that holds (2) columns for project -->
+                  <div class=" col-md-6 col-lg-7"><!-- open first column (used for image) -->
+                    <picture>
+                      <source srcset="img/HomeImages/OlympusHealthThumbnail.png" media="(max-width:767px)">
+                      <img src="img/HomeImages/OlympusHealthThumbnail.png" alt="OlympusHealth Homepage">
+                    </picture>
+                  </div><!-- end first column -->
+                  <div class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
+                    <h3>OlympusHealth</h3><!-- heading for the project -->
+                    <p><!-- open paragraph -->
+                      Olympus Health is a medical examinations company that hires physicians within the U.S.A.
+                    </p><!-- end paragraph -->
+                    <a href="#" class="button">Read more</a><!-- button or link label -->
+                  </div><!-- end second column -->
+                </div><!-- end row that holds (2) columns for project -->
+            </div>
+        </div>
+    </main>
 <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
             <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917"></polygon>
@@ -677,21 +677,23 @@
             <path fill="#1A232C" d="M55.253 470.489L55.253 410.403C55.253 409.85 54.805 409.403 54.253 409.403 53.701 409.403 53.253 409.85 53.253 410.403L53.253 470.489C53.253 471.041 53.701 471.489 54.253 471.489 54.805 471.489 55.253 471.041 55.253 470.489M50.889 340.95L65.312 340.95C65.865 340.95 66.312 340.502 66.312 339.95 66.312 339.397 65.865 338.95 65.312 338.95L50.889 338.95C50.336 338.95 49.889 339.397 49.889 339.95 49.889 340.502 50.336 340.95 50.889 340.95"></path>
         </g>
     </svg>
-  <!--This is the footer section-->
 
+<!-- For the footer  -->
+	<footer id="contact">
+		<div class="container">
+            <h3>Let's Connect!</h3>
+            <p>Are you looking for a UX Designer who is going to work above and beyond? If so, then you can contact me at: <a href="tel:123-456-7890">123-456-7890</a> or you can email me at <a href="mailto:jacksonerose94@gmail.com" class="button contact">Send me an email</a></p>
+            <ul class="social">
+            <!--Social Media Layout and Placeholders-->
+                <li>
+                    <a href="LINKEDIN-URL" target="_blank">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#007fb5;}.cls-2{fill:#fff;}</style></defs><title/><g data-name="14-linkedin" id="_14-linkedin"><rect class="cls-1" height="64" rx="11.2" ry="11.2" width="64"/><rect class="cls-2" height="32.72" width="9.03" x="8.99" y="23.54"/><path class="cls-2" d="M48.2,23.54C41.54,21,36.72,25.3,34.66,27.7V23.54h-9V56.26h9V39a8.45,8.45,0,0,1,2.23-5.92,4.75,4.75,0,0,1,3.41-1.67A5.42,5.42,0,0,1,44.24,33a6.13,6.13,0,0,1,1.7,4.35V56.26H56.1V36S57.23,26.92,48.2,23.54Z"/><circle class="cls-2" cx="13.5" cy="13.38" r="5.64"/></g></svg>
+                    </a>
+                </li>
+            </ul>
+            <p>Copyright John Doe 2022</p>
+        </div>
 
-<footer id="contact">
-      <div><h3>Let's Connect!</h3></div>
-  <div> <p>Are you looking for a UX Designer who is going to work above and beyond? If so,
-  then you can contact me at: <a href="tel:123-456-7890">123-456-7890</a> or you can email me at
-   <a href="mailto:jacksonerose94@gmail.com" class="button contact">Send me an email</a></p></div>
-   <div>
-     <a href="LINKEDIN-URL" target="_blank">
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#007fb5;}.cls-2{fill:#fff;}</style></defs><title/><g data-name="14-linkedin" id="_14-linkedin"><rect class="cls-1" height="64" rx="11.2" ry="11.2" width="64"/><rect class="cls-2" height="32.72" width="9.03" x="8.99" y="23.54"/><path class="cls-2" d="M48.2,23.54C41.54,21,36.72,25.3,34.66,27.7V23.54h-9V56.26h9V39a8.45,8.45,0,0,1,2.23-5.92,4.75,4.75,0,0,1,3.41-1.67A5.42,5.42,0,0,1,44.24,33a6.13,6.13,0,0,1,1.7,4.35V56.26H56.1V36S57.23,26.92,48.2,23.54Z"/><circle class="cls-2" cx="13.5" cy="13.38" r="5.64"/></g></svg>
-      </a></div>
-  <div><p>Copyright Jackson Rose 2022</p> </div>
-</footer>
-
-
-    </body>
+	</footer>
+  </body>
 </html>
