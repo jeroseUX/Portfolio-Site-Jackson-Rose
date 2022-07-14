@@ -1,4 +1,4 @@
-New CSS Code:
+/*New CSS Code:*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 
 /*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
@@ -212,7 +212,26 @@ main {
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*SVG anamation*/
-
+width: 100%;
+max-width: 100%;
+height: auto;
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 /*INSERT SVG CSS HERE*/
 
 /*--------------------------------------------End Section---------------------------------------------*/
