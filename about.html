@@ -1,73 +1,100 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Jackson Rose</title>
-  <!--Add normalize below-->
-  <link rel="stylesheet" type="text/css"
- href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="Sample meta description - index page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/fav/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>About Jackson Rose</title>
   </head>
-  <body>
-    <!--This is the header section-->
-
-    <header>
-      <div class= "container">
-        <a href="index.html">Jackson Rose</a>
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!--This is the main and hero section-->
-
-  <main>
-    <div><picture>
-  <source srcset="img/HomeImages/SelfImage1.png" media="(max-width:767px)">
-  <img src="img/HomeImages/SelfImage1.png" alt="Self Image">
-</picture></div>
-<h2>About Me</h2>
-<p>Background: I graduated from Arizona State University with 4 years of
-experience in economics, 1 year of experience in business, and 8 months of experience in UX
-design. My experience in business has taught me the importance of solving problems in a
-human centered approach.</p>
-
-<div id="Skills" class="row">
-  <div class="col-md-6">
-<h3>Skills</h3>
-    <ul> <li>UX/UI Research</li> <li>UX/UI Design</li><li>Wireframing</li><li>Prototyping</li><li>Personas</li><li>Competitive Analysis</li></ul>
-  </div></div>
-
-
-  <div id="Tools" class="row">
-    <div class="col-md-6">
-<h3>Tools</h3>
-      <ul><li>Adobe XD</li><li> Figma</li><li> Photoshop</li><li> Sketch</li><li> Marvel</li><li> Miro</li></ul>
-    </div></div>
-
-<div><a href="./Files/Rose-Jackson.pdf"  class="button contact">My Resume</a></div>
-
-</main>
-
-    <footer id="contact">
-      <div>
-    <h3>Let's Connect!</h3></div>
-    <div> <p>Are you looking for a UX Designer who is going to work above and beyond? If so,
-    then you can contact me at: <a href="tel:123-456-7890">123-456-7890</a> or you can email me at
-    <a href="mailto:jacksonerose94@gmail.com">jacksonerose94@gmail.com</a> </p></div>
-    <div>
-     <a href="LINKEDIN-URL" target="_blank">
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#007fb5;}.cls-2{fill:#fff;}</style></defs><title/><g data-name="14-linkedin" id="_14-linkedin"><rect class="cls-1" height="64" rx="11.2" ry="11.2" width="64"/><rect class="cls-2" height="32.72" width="9.03" x="8.99" y="23.54"/><path class="cls-2" d="M48.2,23.54C41.54,21,36.72,25.3,34.66,27.7V23.54h-9V56.26h9V39a8.45,8.45,0,0,1,2.23-5.92,4.75,4.75,0,0,1,3.41-1.67A5.42,5.42,0,0,1,44.24,33a6.13,6.13,0,0,1,1.7,4.35V56.26H56.1V36S57.23,26.92,48.2,23.54Z"/><circle class="cls-2" cx="13.5" cy="13.38" r="5.64"/></g></svg>
-      </a></div>
-    <!--Testing the Twitter SVG-->
-
-        <div><p>Copyright Jackson Rose 2022</p> </div>
-          </footer>
-    </body>
-    </html>
+  <body id="about-page">
+    <!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+            <a href="index.html">Jackson Rose</a>
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html">Work</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+		</div>
+	</header>
+​
+    <main>
+        <!-- For the hero section -->
+        <div id="hero" style="margin-bottom: 40px;">
+            <div class="container">
+                <h1>About me</h1>
+                <p>
+                    Hello! My name is Jackson Rose and I am a Junior UX Designer based in Phoenix, Arizona U.S.A.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div><!--For the image, My Story and Skills and tools sections-->
+                <div>
+                    <picture><!--For students, the images below should be updated with real images-->
+                      <source srcset="img/HomeImages/SelfImage1.png" media="(max-width:767px)">
+                      <img src="img/HomeImages/SelfImage1.png" alt="Self Image">
+                    </picture>
+                    <div><!--For My Story and Skills and tools sections-->
+                        <div class="column col-lg-7"><!--Column one-->
+                            <h2>My story</h2>
+                            <p>I graduated from Arizona State University with 4 years ofexperience in economics, 1 year of experience in business, and 8 months of experience in UX design.</p>
+                            <p>My experience in business has taught me the importance of solving problems in a human centered approach.</p>
+                            <a href="./Files/Rose-Jackson.pdf"  class="button contact">My Resume</a>
+                        </div>
+                        <div class="column col-lg-8"><!--Column two-->
+                            <h2>Skills and Tools</h2>
+                            <div class="column col-md-6"><!--Column two, row one-->
+                                <h3>Relevant Skills</h3>
+                                <ul>
+                                    <li>UX/UI Research</li>
+                                    <li>UX/UI Design</li>
+                                    <li>Wireframing</li>
+									<li>Prototyping</li>
+									<li>Personas</li>
+									<li>Competitive Analysis</li>
+                                </ul>
+                            </div>
+                            <div class="column col-md-6"><!--Column two, row two-->
+                                <h3>My Tools</h3>
+                                <ul>
+                                    <li>Adobe XD</li>
+                                    <li>Figma</li>
+                                    <li>Photoshop</li>
+									<li>Sketch</li>
+									<li>Marvel</li>
+									<li>Miro</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+​
+​
+<!-- For the footer  -->
+	<footer id="contact" style="clear: both;">
+		<h3>Let's Connect!</h3>
+            <p>Are you looking for a UX Designer who is going to work above and beyond? If so, then you can contact me at: <a href="tel:123-456-7890">123-456-7890</a> or you can email me at <a href="mailto:jacksonerose94@gmail.com" class="button contact">Send me an email</a></p>
+            <ul class="social">
+            <!--Social Media Layout and Placeholders-->
+                <li>
+                    <a href="LINKEDIN-URL" target="_blank">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#007fb5;}.cls-2{fill:#fff;}</style></defs><title/><g data-name="14-linkedin" id="_14-linkedin"><rect class="cls-1" height="64" rx="11.2" ry="11.2" width="64"/><rect class="cls-2" height="32.72" width="9.03" x="8.99" y="23.54"/><path class="cls-2" d="M48.2,23.54C41.54,21,36.72,25.3,34.66,27.7V23.54h-9V56.26h9V39a8.45,8.45,0,0,1,2.23-5.92,4.75,4.75,0,0,1,3.41-1.67A5.42,5.42,0,0,1,44.24,33a6.13,6.13,0,0,1,1.7,4.35V56.26H56.1V36S57.23,26.92,48.2,23.54Z"/><circle class="cls-2" cx="13.5" cy="13.38" r="5.64"/></g></svg>
+                    </a>
+                </li>
+            </ul>
+            <p>Copyright Jackson Rose 2022</p>
+	</footer>
+  </body>
+</html>
