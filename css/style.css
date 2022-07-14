@@ -55,7 +55,7 @@ img {
 
 /*change the default link color to your primary color (copied from your comments at the top of the document)*/
 a {
- color: #ff7f50;
+ color: #000000;
  text-decoration: none; /* No underlining */
 }
 a:hover {
@@ -70,7 +70,7 @@ a:active { /* selected link */
 /*Pseudo classes for Accessibility for Across the Web*/
 a:hover,
 a:focus {
- color: #cc6540;
+ color: #7BEAF3;
  text-decoration: underline;
 }
 
@@ -78,18 +78,18 @@ a:focus {
 /*CSS code for the button class*/
 .button {
  display: inline-block;
- background-color: #6A6969;
- color: #E65555;
+ background-color: #1B5A97;
+ color: #FFFFFF;
  font-weight: 400;
  padding: 10px;
  border-radius: 3px;
- border-bottom: 2px solid #994c30;
+ border-bottom: 2px solid #727272;
  transition: 0.2s opacity;
 }
 
 .button:hover {
  opacity: 0.8;
- color: #ffffff;
+ color: #FFFFFF;
  text-decoration: none;
 }
 
@@ -216,8 +216,9 @@ width: 100%;
 max-width: 100%;
 height: auto;
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
 }
 .sun {
   animation: 4s color-change infinite alternate linear;
@@ -228,6 +229,10 @@ height: auto;
 }
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
 }
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
