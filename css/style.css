@@ -212,9 +212,9 @@ main {
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*SVG anamation*/
-width: 100%;
+.svg-animation {width: 100%;
 max-width: 100%;
-height: auto;
+height: auto;}
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
