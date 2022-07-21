@@ -117,7 +117,7 @@ a:focus {
 /*style the <header> element*/
 header {
  background-color: #EFEFEF;
- padding: 10px 0;
+ padding: 10px 0 4px;
  border-bottom: 3px solid #4a4a4a;
  box-shadow: 6px 6px 5px 0px rgba(50, 50, 50, 0.75);
  text-align: unset;
@@ -127,20 +127,28 @@ header {
 }
 
 /*style the logo*/
-header .logo {
- max-width: 250px;
+header.logo {
+ max-width: 150px;
  margin-top: 10px;
  margin-bottom: 10px;
 }
 
-/*Navigation Styling*/
-nav {
- display: inline-block;
+header.navtoggle, .navtoggle.responsive {
+  position: relative;
 }
 
+header.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+/*Navigation Styling*/
+
+
 nav > ul {
- list-style-type: none;
- padding: 0;
+ margin: 1em 0;
 }
 
 nav > ul > li {
@@ -155,7 +163,11 @@ nav > ul > li > a {
 }
 
 main {
- padding-top: 133px;
+ padding-top: 56px;
+}
+
+main.navtoggle.responsive li  {
+  display: block;
 }
 
 #hero {
@@ -273,6 +285,12 @@ Medium devices (640px and larger)
    float: right;
  }
 
+ nav > ul > li {
+  display: inline-block;
+ }
+ .navtoggle li:not(:last-child) {
+  display: none;
+}
  .col-md-6 {
    width: 50%;
    float: left;

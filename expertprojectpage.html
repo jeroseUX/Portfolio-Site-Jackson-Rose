@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <script src="https://kit.fontawesome.com/bfd2d3da4e.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,14 +14,16 @@
 <!--Header-->
 <header>
   <div class= "container">
+    <div class= "navtoggle" id= "myNavtoggle">
     <a href="index.html">Jackson Rose</a>
     <nav>
       <ul>
         <li><a href="index.html">Work</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact;"onclick="menuToggle()">Contact</a></li>
       </ul>
     </nav>
+  </div>
   </div>
 </header>
   <!--End of Header-->
@@ -354,5 +357,7 @@ principles.</p>
       </div>
 
 </footer>
+<script src="js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </body>
 </html>
