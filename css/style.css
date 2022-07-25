@@ -176,9 +176,12 @@ main.navtoggle.responsive li  {
   font-size: 20px;
 }
 
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
 
 .navtoggle li:not(:last-child){
-  display: Desktop;
+  display: none;
 }
 
 .navtoggle, .navtoggle.responsive {
