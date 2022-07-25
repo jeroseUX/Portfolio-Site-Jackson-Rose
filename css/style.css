@@ -176,14 +176,6 @@ main.navtoggle.responsive li  {
   font-size: 20px;
 }
 
-function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
-  if (x.className === 'navtoggle') {
-    x.className += ' responsive';
-  } else {
-    x.className = 'navtoggle';
-  }
-}
 
 .navtoggle li:not(:last-child){
   display: Desktop;
